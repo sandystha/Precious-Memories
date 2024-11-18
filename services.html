@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Precious Memories Photography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --text-dark: #171717;
+  --text-light: #525252;
+  --extra-light: #a3a3a3;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Merriweather", serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--text-dark);
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--text-light);
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ 
+.section__header {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
+.service {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("assets/service.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service__container .section__header {
+  color: var(--white);
+}
+
+.service__container .section__description {
+  max-width: 600px;
+  margin-inline: auto;
+  color: var(--extra-light);
+}
+
+.service__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.service__card {
+  text-align: center;
+}
+
+.service__card h4 {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--white);
+}
+
+.service__card h4::after {
+  position: absolute;
+  content: "~";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  line-height: 0;
+}
+
+.service__card p {
+  color: var(--extra-light);
+  line-height: 1.75rem;
+}
+@media (width > 768px) {
+  
+
+  
+ 
+
+  .service__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.instagram__container {
+  overflow: hidden;
+}
+
+.instagram__flex {
+  margin-top: 2rem;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  animation: scroll 45s linear infinite;
+}
+
+.instagram__flex img {
+  max-width: 135px;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Precious Memories</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="service" id="service">
+        <div class="section__container service__container">
+          <h2 class="section__header">~ SERVICES ~</h2>
+          <p class="section__description">
+            At Capturer, we offer a range of professional photography services
+            tailored to meet your unique needs. With a commitment to excellence
+            and creativity, we strive to exceed your expectations, delivering
+            captivating visuals that tell your story with authenticity and
+            passion.
+          </p>
+          <div class="service__grid">
+            <div class="service__card">
+              <h4>Portrait Sessions</h4>
+              <p>
+                Our portrait sessions are designed to showcase your personality
+                and style in stunning imagery.
+              </p>
+            </div>
+            <div class="service__card">
+              <h4>Maternity Sessions</h4>
+              <p>
+                Embrace the beauty and miracle of new life with our maternity and
+                newborn photography sessions.
+              </p>
+            </div>
+            <div class="service__card">
+              <h4>Family Sessions</h4>
+              <p>
+                Cherish the bond of family with our custom-designed playful candid
+                moments and portrait sessions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__container instagram__container">
+        <h2 class="section__header">~ INSTAGRAM ~</h2>
+        <div class="instagram__flex">
+          <img src="assets/image-1.jpg" alt="instagram" />
+          <img src="assets/image-2.jpg" alt="instagram" />
+          <img src="assets/image-3.jpg" alt="instagram" />
+          <img src="assets/image-4.jpg" alt="instagram" />
+          <img src="assets/image-5.jpg" alt="instagram" />
+          <img src="assets/image-6.jpg" alt="instagram" />
+          <img src="assets/image-7.jpg" alt="instagram" />
+          <img src="assets/image-8.jpg" alt="instagram" />
+        </div>
+      </section>
+    
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="main.js"></script>
+</body>
+</html>
